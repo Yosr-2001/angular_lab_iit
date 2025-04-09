@@ -1,0 +1,16 @@
+
+<form (ngSubmit)="sub()">
+    <mat-form-field>
+      <input matInput type="email" name="email" placeholder="Email" [(ngModel)]="email">
+   
+   <!-- two way binding bsh nebath b champs b champs
+         f oudh formControlName="Email" -->
+         </mat-form-field>
+    <mat-form-field>
+      <input matInput type="password" name="password" placeholder="Password" [(ngModel)]="password">
+    </mat-form-field>
+        <!-- obligatoire type btn submit ! -->
+
+    <button mat-raised-button color="primary" type="submit">Connecter</button>
+  </form>
+  

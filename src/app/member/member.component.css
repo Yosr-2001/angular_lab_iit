@@ -1,0 +1,166 @@
+table {
+    margin-top: 40px ;  
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: rgb(52, 52, 52);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+th, td,tr {
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #ffffff;
+    color: rgb(52, 52, 52);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+th {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border-bottom: 1px solid #6a6868;
+}
+
+
+
+/* Icônes d'action */
+mat-icon {
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+mat-icon:hover {
+    color: #1565c0;
+    transform: scale(1.2);
+}
+button[mat-flat-button] {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+button[mat-flat-button]:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+button[mat-flat-button] mat-icon {
+    margin-right: 5px;
+}
+
+
+/* Conteneur des boutons d'action */
+.mat-cell[matColumnDef="6"] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  /* Style de base des boutons */
+  .mat-cell button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Effet hover sur les boutons */
+  .mat-cell button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Bouton Edit spécifique */
+  .mat-cell button:first-child {
+    color: #4285F4;
+    background-color: rgba(66, 133, 244, 0.1);
+  }
+  
+  .mat-cell button:first-child:hover {
+    background-color: rgba(66, 133, 244, 0.2);
+  }
+  
+  /* Bouton Delete spécifique */
+  .mat-cell button:last-child {
+    color: #EA4335;
+    background-color: rgba(234, 67, 53, 0.1);
+  }
+  
+  .mat-cell button:last-child:hover {
+    background-color: rgba(234, 67, 53, 0.2);
+  }
+  
+  /* Style des icônes */
+  .mat-cell button mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s;
+  }
+  
+  /* Animation des icônes au hover */
+  .mat-cell button:hover mat-icon {
+    transform: scale(1.2);
+  }
+
+
+  /* Bouton principal */
+.example-button-row button {
+    margin-top: 20px ;
+    margin-right: 20px;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Couleur personnalisée pour le bouton bleu */
+  button[color="bleu"] {
+    background-color: #4285F4;
+    color: white;
+  }
+  
+  /* Effet hover */
+  .example-button-row button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.25);
+  }
+  
+  /* Animation de l'icône */
+  .example-button-row button mat-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .example-button-row button:hover mat-icon {
+    transform: rotate(90deg) scale(1.1);
+  }

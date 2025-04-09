@@ -1,0 +1,81 @@
+/* Container du formulaire */
+form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  /* Champs de formulaire */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Inputs */
+  .mat-input-element {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+  
+  /* Placeholders */
+  .mat-form-field-label {
+    color: #666;
+  }
+  
+  /* Animation des labels */
+  .mat-form-field.mat-focused .mat-form-field-label {
+    color: #3f51b5;
+  }
+  
+  /* Bordure des champs */
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+    color: #3f51b5;
+  }
+  
+  /* Bouton de soumission */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effet hover sur le bouton */
+  button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(63, 81, 181, 0.3);
+  }
+  
+  /* Animation des champs au focus */
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    form {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    mat-form-field {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Style pour les erreurs (vous pouvez l'ajouter plus tard) */
+  .mat-error {
+    font-size: 14px;
+    margin-top: 5px;
+  }
