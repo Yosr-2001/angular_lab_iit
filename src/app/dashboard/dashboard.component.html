@@ -1,1 +1,70 @@
-<p>dashboard works!</p>
+<div fxLayout="row" fxLayoutAlign="space-evenly center" style="margin-top: 20px">
+    <mat-card appearance="outlined">
+
+        <mat-card-title>Members</mat-card-title>
+
+        <mat-card-actions>
+            <button mat-button>{{Nb_members}}</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card appearance="outlined">
+
+        <mat-card-title> Articles</mat-card-title>
+
+        <mat-card-actions>
+            <button mat-button>{{Nb_articles}}</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card appearance="outlined">
+
+        <mat-card-title> Events</mat-card-title>
+
+        <mat-card-actions>
+            <button mat-button>{{Nb_events}}</button>
+        </mat-card-actions>
+    </mat-card>
+
+
+    <mat-card appearance="outlined">
+
+        <mat-card-title>Tools</mat-card-title>
+
+        <mat-card-actions>
+            <button mat-button>{{Nb_tools}}</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+
+<div class="charts-container">
+    <div class="chart-wrapper">
+      <canvas baseChart
+              [type]="'pie'"
+              [datasets]="chartDataPie"
+              [labels]="chartLabelsPie"
+              [options]="chartOptionsPie">
+      </canvas>
+    </div>
+  
+    <div class="chart-wrapper">
+        <canvas baseChart
+                [type]="'doughnut'"
+                [datasets]="chartDataDoughnut"
+                [labels]="chartLabelsDoughnut"
+                [options]="chartOptionsDoughnut">
+        </canvas>
+      </div>
+    
+
+    <div class="chart-wrapper">
+      <canvas baseChart
+              [type]="'line'"
+              [datasets]="chartDataLine"
+              [labels]="chartLabelsLine"
+              [options]="chartOptionsLine">
+      </canvas>
+    </div>
+    
+  </div>
+  

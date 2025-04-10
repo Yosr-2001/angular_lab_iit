@@ -5,13 +5,101 @@
       "name": "yosr",
       "type": "student",
       "createdDate": "30/10/2020",
-      "id": "4"
-    },    {
+      "id": "1",
+      "tabEvents":[
+        {
+          "id": "evt4",
+          "title": "conf 2",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "tunis"
+        },
+        {
+          "id": "evt2",
+          "title": "conf 2",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "sfax"
+        },
+        {
+          "title": "conf 113",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "tunis",
+          "id": "evt11"
+        }
+      ]
+    },
+    {
       "cin": "123",
       "name": "amin",
+      "type": "teacher",
+      "createdDate": "30/10/2020",
+      "id": "2",
+      "tabEvents":[
+        {
+          "title": "conf 113",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "tunis",
+          "id": "evt11"
+        },
+        {
+          "id": "evt22",
+          "title": "conf 22",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "sfax"
+        }
+      ]
+    },
+    {
+      "cin": "124",
+      "name": "bouhmid",
       "type": "student",
       "createdDate": "30/10/2020",
-      "id": "4"
+      "id": "3",
+      "tabEvents":[
+        {
+          "id": "evt52",
+          "title": "conf 22",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "sfax"
+        }
+      ]
+    },
+    {
+      "cin": "693",
+      "name": "salah",
+      "type": "teacher",
+      "createdDate": "30/10/2020",
+      "id": "4",
+      "tabEvents":[
+        {
+          "id": "evt52",
+          "title": "conf 22",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "sfax"
+        }
+      ]
+    },
+    {
+      "cin": "693",
+      "name": "ali",
+      "type": "teacher",
+      "createdDate": "30/10/2020",
+      "id": "5", 
+      "tabEvents":[
+        {
+          "id": "evt52",
+          "title": "conf 22",
+          "datedebut": "2023-01-01",
+          "datefin": "2023-01-02",
+          "lieu": "sfax"
+        }
+      ]
     }
   ],
   "evts": [
@@ -38,6 +126,13 @@
     },
     {
       "id": "evt22",
+      "title": "conf 22",
+      "datedebut": "2023-01-01",
+      "datefin": "2023-01-02",
+      "lieu": "sfax"
+    },
+    {
+      "id": "evt52",
       "title": "conf 22",
       "datedebut": "2023-01-01",
       "datefin": "2023-01-02",
@@ -92,6 +187,18 @@
       "lien": "http://example.com/vue",
       "date": "2023-01-01",
       "Sourcepdf": "http://example.com/vue.pdf"
+    }
+  ],
+  "tools": [
+    {
+      "id": "123",
+      "date": "2023-01-01",
+      "source": "source1"
+    },
+    {
+      "id": "456",
+      "date": "2023-01-01",
+      "source": "source2"
     }
   ]
 }

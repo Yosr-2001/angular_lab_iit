@@ -1,0 +1,19 @@
+.charts-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 2rem;  
+    flex-wrap: wrap; 
+    padding: 1.5rem;
+  }
+  
+  .chart-wrapper {
+    width: 450px;
+    height: 400px;
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  

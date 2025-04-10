@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MemberComponent } from './member/member.component';
@@ -25,7 +24,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { EventsComponent } from './events/events.component';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { ModalEventComponent } from './modal-event/modal-event.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -33,12 +32,14 @@ import { EventDetailsComponent } from './event-details/event-details.component';
 import { ModalPubComponent } from './modal-pub/modal-pub.component';
 import { MatSelectModule } from '@angular/material/select';
 import { LoginComponent } from './login/login.component';
-
-
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './environnements';
- ;
+import {MatCardModule} from '@angular/material/card';
+import { NgChartsModule } from 'ng2-charts';
+import { ChartDataset, ChartOptions } from 'chart.js';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +81,8 @@ import { firebaseConfig } from './environnements';
     MatFormFieldModule, MatSelectModule,   
      AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
+    MatCardModule,
+    NgChartsModule, 
 
 
   ],

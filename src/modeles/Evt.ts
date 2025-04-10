@@ -4,6 +4,6 @@ export interface Evt
     title:string,
     datedebut:Date,
     datefin:Date,
-    lieu:string
+    lieu:string,
 
 }
