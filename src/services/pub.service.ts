@@ -13,4 +13,8 @@ export class PubService {
     {
       return this.http.get<Pub[]>('http://localhost:3000/pubs')
     }
-}
+    AddPub(pub:Pub):Observable<Pub>
+    {
+      return this.http.post<Pub>('http://localhost:3000/pubs',pub)
+    }
+  }

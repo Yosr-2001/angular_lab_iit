@@ -1,55 +1,44 @@
+<mat-dialog-content [formGroup]="form">
 
-<mat-dialog-content >
-  
     <mat-form-field>
-        <input matInput
-                placeholder="titre"
-               formControlName="titre">
+        <input matInput placeholder="titre" formControlName="titre">
     </mat-form-field>
-<br>
-<mat-form-field>
-    <mat-label>type</mat-label>
-    <mat-select formControlName="type">
-      <mat-option *ngFor="let type of types" [value]="type.value">{{type.viewValue}}</mat-option>
-    </mat-select>
-</mat-form-field>
-<mat-form-field>
-    <mat-label>Type</mat-label>
-    
-    <mat-select formControlName="type">
-      <mat-option value="Conf">Conf</mat-option>
-      <mat-option value="Journal">Journal</mat-option>
-      <mat-option value="Magazine">Magazine</mat-option>
-    </mat-select>
-</mat-form-field>  
-<br>
+    <br>
+    <mat-form-field>
+        <mat-label>type</mat-label>
+        <mat-select formControlName='type' name="type">
+            <mat-option *ngFor="let type of types" [value]="type.value">{{type.viewValue}}</mat-option>
+        </mat-select>
+      
+
+    </mat-form-field>
+    <p> Selected type: {{ form.get('type')?.value }} </p>
+    <!-- formcontrolname tebaath object kemel mel html
+     ngmodel tebath b champs b champs  -->
+
     <mat-form-field>
         <mat-label>Choose a date</mat-label>
-        <input matInput [matDatepicker]="picker">
+        <input matInput [matDatepicker]="picker" formControlName="date">
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
+    </mat-form-field>
 
-      <br>
-      
+    <br>
+
     <mat-form-field>
-        <input matInput
-                placeholder="lien"
-               formControlName="lien">
+        <input matInput placeholder="lien" formControlName="lien">
     </mat-form-field>
-     <br>
-     
-     <mat-form-field>
-        <input matInput
-                placeholder="sourcePdf"
-               formControlName="sourcePdf">
+    <br>
+
+    <mat-form-field>
+        <input matInput placeholder="sourcePdf" formControlName="sourcePdf">
     </mat-form-field>
 
-    
+
 </mat-dialog-content>
 
-<!-- <mat-dialog-actions>
-    <button class="mat-raised-button"(click)="close()">Close</button>
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Close</button>
     <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
-</mat-dialog-actions> -->
+</mat-dialog-actions>

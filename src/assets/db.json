@@ -6,7 +6,7 @@
       "type": "student",
       "createdDate": "30/10/2020",
       "id": "1",
-      "tabEvents":[
+      "tabEvents": [
         {
           "id": "evt4",
           "title": "conf 2",
@@ -28,6 +28,12 @@
           "lieu": "tunis",
           "id": "evt11"
         }
+      ],
+      "tabPubs": [
+        "123"
+      ],
+      "tabTools": [
+        "123"
       ]
     },
     {
@@ -36,7 +42,7 @@
       "type": "teacher",
       "createdDate": "30/10/2020",
       "id": "2",
-      "tabEvents":[
+      "tabEvents": [
         {
           "title": "conf 113",
           "datedebut": "2023-01-01",
@@ -51,6 +57,12 @@
           "datefin": "2023-01-02",
           "lieu": "sfax"
         }
+      ],
+      "tabPubs": [
+        "456"
+      ],
+      "tabTools": [
+        "123"
       ]
     },
     {
@@ -59,7 +71,7 @@
       "type": "student",
       "createdDate": "30/10/2020",
       "id": "3",
-      "tabEvents":[
+      "tabEvents": [
         {
           "id": "evt52",
           "title": "conf 22",
@@ -67,6 +79,12 @@
           "datefin": "2023-01-02",
           "lieu": "sfax"
         }
+      ],
+      "tabPubs": [
+        "123"
+      ],
+      "tabTools": [
+        "123"
       ]
     },
     {
@@ -75,7 +93,7 @@
       "type": "teacher",
       "createdDate": "30/10/2020",
       "id": "4",
-      "tabEvents":[
+      "tabEvents": [
         {
           "id": "evt52",
           "title": "conf 22",
@@ -90,8 +108,8 @@
       "name": "ali",
       "type": "teacher",
       "createdDate": "30/10/2020",
-      "id": "5", 
-      "tabEvents":[
+      "id": "5",
+      "tabEvents": [
         {
           "id": "evt52",
           "title": "conf 22",
@@ -99,6 +117,12 @@
           "datefin": "2023-01-02",
           "lieu": "sfax"
         }
+      ],
+      "tabPubs": [
+        "123"
+      ],
+      "tabTools": [
+        "123"
       ]
     }
   ],
@@ -141,7 +165,7 @@
   ],
   "pubs": [
     {
-      "id": "pub1",
+      "id": "123",
       "type": "Article",
       "titre": "Introduction to Angular",
       "lien": "http://example.com/angular",
@@ -149,7 +173,7 @@
       "Sourcepdf": "http://example.com/angular.pdf"
     },
     {
-      "id": "pub2",
+      "id": "456",
       "type": "Article",
       "titre": "Introduction to React",
       "lien": "http://example.com/react",
@@ -157,36 +181,24 @@
       "Sourcepdf": "http://example.com/react.pdf"
     },
     {
-      "id": "pub3",
-      "type": "Article",
-      "titre": "Introduction to Vue",
-      "lien": "http://example.com/vue",
-      "date": "2023-01-01",
-      "Sourcepdf": "http://example.com/vue.pdf"
+      "id": null,
+      "type": "Journal",
+      "titre": "qq",
+      "lien": "ss",
+      "date": "2025-04-08T23:00:00.000Z",
+      "Sourcepdf": null
     },
     {
-      "id": "pub4",
-      "type": "Article",
-      "titre": "Introduction to Angular",
-      "lien": "http://example.com/angular",
-      "date": "2023-01-01",
-      "Sourcepdf": "http://example.com/angular.pdf"
+      "id": null,
+      "type": "Conf",
+      "titre": "aa",
+      "lien": "aaa",
+      "date": "2025-04-09T23:00:00.000Z",
+      "Sourcepdf": null
     },
     {
-      "id": "pub5",
-      "type": "Article",
-      "titre": "Introduction to React",
-      "lien": "http://example.com/react",
-      "date": "2023-01-01",
-      "Sourcepdf": "http://example.com/react.pdf"
-    },
-    {
-      "id": "pub6",
-      "type": "Article",
-      "titre": "Introduction to Vue",
-      "lien": "http://example.com/vue",
-      "date": "2023-01-01",
-      "Sourcepdf": "http://example.com/vue.pdf"
+      "id": "8c78",
+      "idMember": null
     }
   ],
   "tools": [

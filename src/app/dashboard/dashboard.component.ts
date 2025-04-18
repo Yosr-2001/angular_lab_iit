@@ -36,7 +36,7 @@ export class DashboardComponent {
       data: []
     }
   ];
-  
+
   chartLabelsDoughnut: string[] = ['sfax', 'tunis'];
   chartOptionsDoughnut: ChartOptions = {};
   //Line chart data
@@ -49,8 +49,18 @@ export class DashboardComponent {
   ];
   chartLabelsLine: string[] = [];
   chartOptionsLine: ChartOptions = {};
- 
-  /////////
+
+  // Bar chart data nb events per ville
+  chartDataBar: ChartDataset[] = [
+    {
+      label: "nombre d'événements par ville",
+      data: this.tab_events,
+    }
+  ];
+  chartLabelsBar: string[] = ['sfax', "tunis"]; //axe des x
+  chartOptions: ChartOptions = {};
+
+
 
   constructor(private MS: MemberService, private ES: EventService, private PS: PubService, private TS: ToolService) {
 
@@ -68,9 +78,9 @@ export class DashboardComponent {
         this.tab_name[i] = data[i].name;
         // this.chartLabelsLine.push(data[i].name); //yzid kol mara element
         console.log("data[i].name", data[i].name);
-        this.tab_events[i]= data[i].tabEvents.length;
+        this.tab_events[i] = data[i].tabEvents.length;
       }
-      this.chartLabelsLine=this.tab_name;
+      this.chartLabelsLine = this.tab_name;
       console.log("chart data line", this.chartLabelsLine);
 
 
@@ -83,6 +93,10 @@ export class DashboardComponent {
         else this.Nb_Tunis++;
       }
       this.chartDataDoughnut[0].data = [this.Nb_Sfax, this.Nb_Tunis];
+      //this.chartLabelsBar = ['sfax', 'tunis'];
+      this.chartDataBar = [{
+        data: [this.Nb_Sfax, this.Nb_Tunis]
+      }]
     }
     );
 

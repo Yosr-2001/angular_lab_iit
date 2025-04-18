@@ -38,6 +38,7 @@ import { firebaseConfig } from './environnements';
 import {MatCardModule} from '@angular/material/card';
 import { NgChartsModule } from 'ng2-charts';
 import { ChartDataset, ChartOptions } from 'chart.js';
+import { ModalMemberComponent } from './modal-member/modal-member.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { ChartDataset, ChartOptions } from 'chart.js';
     ModalEventComponent,
     EventDetailsComponent,
     ModalPubComponent,
-    LoginComponent
+    LoginComponent,
+    ModalMemberComponent
   ],
   imports: [
     BrowserModule,

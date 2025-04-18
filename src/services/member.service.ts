@@ -2,11 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Member } from 'src/modeles/Member';
+import { Pub } from 'src/modeles/Pub';
+
 // le decorateur Injectable indique que le service peut etre injecter sans un autre services ou un composant
 @Injectable({
   providedIn: 'root'
 })
 export class MemberService {
+  tabRecup:   any[] = [];
   constructor(private http:HttpClient) { }
 // fonction qui envoie la requete en mode get 
 GetAllMembers():Observable<Member[]>
@@ -28,4 +31,20 @@ getMemberByID(id:string):Observable<Member>
 editMember(id:string,member:Member):Observable<void>
 {
   return this.http.put<void>(`http://localhost:3000/members/${id}`,member)
-}}
+}
+
+affectMemberToEvent(idPub:string,idMember:string)
+{
+
+  this.getMemberByID(idMember).subscribe((M) => {
+    
+
+    this.tabRecup = M.tabPubs;
+    this.tabRecup.push(idPub);
+
+
+  return this.http.patch<void>(`http://localhost:3000/members/${idMember}`,{tabPub:this.tabRecup}) 
+}
+); 
+}
+}
